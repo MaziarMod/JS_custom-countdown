@@ -111,7 +111,7 @@ ul {
 }
 
 li {
-
+  display: inline-block;
   font-size: 30px;
   list-style-type: none;
   padding: 10px;
@@ -130,6 +130,28 @@ li span {
   top: 60px;
 }
 
+.complete-title {
+  animation: complete 4s infinite;
+}
+
+@keyframes complete {
+  0% {
+    color: rgb(213, 13, 13);
+  }
+  25% {
+    color: rgb(231, 214, 37);
+  }
+  50% {
+    color: rgb(50, 231, 37);
+    transform: scale(1.5);
+  }
+  75% {
+    color: rgb(21, 0, 254);
+  }
+  100% {
+    color: rgb(208, 0, 255);
+  }
+}
 
 /* Media Query: Large Smartphone (Vertical) */
 @media screen and (max-width: 600px) {
